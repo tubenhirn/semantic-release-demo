@@ -1,8 +1,10 @@
 module.exports = {
-  branches: ["main", "hotfix/*"],
+  branches: [
+    { name: "main", channel: "latest" },
+    { name: "hotfix/*"},
+  ],
   plugins: [
     "@semantic-release/commit-analyzer",
     "@semantic-release/release-notes-generator",
-    "@semantic-release/github",
   ],
 };
